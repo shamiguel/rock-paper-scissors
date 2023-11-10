@@ -2,7 +2,8 @@
     "compilerOptions": {
         "target": "ES2016",
         "outDir": "dist",
-        "moduleResolution": "Node",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
         "allowSyntheticDefaultImports": true
     }
 }
