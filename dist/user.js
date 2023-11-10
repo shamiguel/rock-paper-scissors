@@ -20,8 +20,8 @@ class User {
         return enumValues[randomIndex];
     }
     //so a hand is a hand, right? 
+    //throw<T>(hand:T):string{
     throw(hand) {
-        //throw(hand:Hand):string{
         const enumValues = Object.keys(Hand);
         const computer = this.play(enumValues);
         if (hand === Hand.Rock) {

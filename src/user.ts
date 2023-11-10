@@ -30,8 +30,8 @@ class User implements Person{
         return enumValues[randomIndex]
     }
     //so a hand is a hand, right? 
-    throw<T>(hand:T):string{
-    //throw(hand:Hand):string{
+    //throw<T>(hand:T):string{
+    throw(hand:(string | symbol)):string{
         const enumValues = Object.keys(Hand);
         const computer = this.play(enumValues);
 

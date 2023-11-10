@@ -40,7 +40,7 @@ async function main(){
             message: `Lets Play 3 Rounds`
         })
 
-        const round1 = await p.select({
+        const round1:(string | symbol)  = await p.select({
             message: `Choose your hand:`,
             options: [
                 {value: "Paper", label: "Paper"},
@@ -51,7 +51,8 @@ async function main(){
 
         const round1Result = newPlayer.throw(round1);
 
-        const round2 = await p.select({
+        
+        const round2:(string | symbol) = await p.select({
             message: `${round1Result} Next Hand: `,
             options: [
                 {value: "Paper", label: "Paper"},
@@ -62,7 +63,7 @@ async function main(){
 
         const round2Result = newPlayer.throw(round2);
 
-        const round3 = await p.select({
+        const round3:(string | symbol) = await p.select({
             message: `${round2Result} Next Hand: `,
             options: [
                 {value: "Paper", label: "Paper"},
